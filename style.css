@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background-color: #ffffff;
+    width: 100%;
+    margin-right: 90px;
+}
+
+* {
+    margin:0;
+    padding:-10px;
+    border:0;
+    font-family: JosefinSans, Arial;
+}
+
+.todo{
+    /* text-align: center; */
+    margin-top: -90px;
+    align-items: baseline;
+    position: absolute;
+    top: -38px;
+    left: 455px;
+}
+
+.sol {
+  align-items: baseline;
+  position: absolute;
+  top: -118px;
+  right: 330px;
+  background-color: (hsl(235, 21%, 11%), saturation, lightness);
+}
+
+.container {
+  position: relative;
+}
+
+.lis{
+  position: absolute;
+  top: 15%;
+  left: 45%;
+}
+
+
+.img{
+   height: 10%;
+   width: auto;
+   max-height: 10%;
+}
+
+.foto{
+    height: 200px;
+    /* width: 200px; */
+}
+
+.light-theme {
+    /* --bg: var(--white); */
+    background-color: #ffffff;
+    font-family: JosefinSans, Arial;
+}
+
+.dark-theme {
+    background-color: #181824;
+     /* --bg:(var(--black); */ 
+     color: #ffffff;
+     font-family: JosefinSans, Arial;
+}
+
+
+.ft {
+  position: fixed;
+  bottom:0;
+  left:50%;
+}
+
+  .inbox {
+    /* max-width:400px; */
+    margin:50px auto;
+    background: (hsl(235, 21%, 11%), saturation, lightness);
+    border-radius:5px;
+    width: 450px;
+  }
+  
+/* checklist espacos */
+  .item {
+    display:flex;
+    align-items:center;
+    border-bottom: 5px solid (hsl(233, 14%, 35%));
+    background-color: (hsl(235, 21%, 11%), saturation, lightness);
+    font-family: JosefinSans, Arial;
+    /* width: 100px; */
+  }
+
+  .item:last-child {
+    border-bottom:0;
+  }
+
+/* Checklist riscado */
+  input:checked + p {
+    text-decoration: line-through;
+    color: #726d6d;
+  }
+
+  input[type="checkbox"] {
+    margin:10px;
+  }
+  
+  p {
+    margin:0;
+    padding:20px;
+    transition:background 0.2s;
+    flex:1;
+    font-family: JosefinSans, Arial;
+    font-size: 15px;
+    font-weight: 200;
+    
+    background-color: hsl(235, 21%, 11%);
+     color: #ffffff;
+     font-family: JosefinSans, Arial;
+  }
+
+  .details {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .cr {
+    /* padding:15px; */
+    margin-bottom: 30px;
+    width: 450px;
+    background-repeat: repeat;
+    border-bottom: 5px solid (hsl(235, 73%, 50%),saturation, lightness);
+  }
+
