@@ -1,106 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
- <link rel="stylesheet" href="style.css">
-  <title>Luma | Todo app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Luma | Todo app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 
-<body> 
-  
- <div class="container">
-   <div class="foto">
-    <img src="./images/bg-desktop-dark.jpg" alt="desktop imagem">
-   </div>
- </div>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>T O D O</h1>
+            <div class="icons-mode">
+                <img src="./images/icon-sun.svg" alt="simbolo sol">
+            </div>
+        </div>
 
- <div class="container">
-  <div class="todo">
-    <h1>T O D O</h1>
-   </div>
- </div>
- 
- <div class="container">
-  <div class="sol">
-    <button aria-hidden="true"><a href=""><i class="bi bi-sun-fill"></i></a></button>
-   </div>
- </div>
+        <!-- checklist -->
+        <div class="content">
+            <div class="item create">
+                <input type="checkbox" />
+                <input type="text" placeholder="Criar uma nova tarefa..." />
+            </div>
 
- <!-- <div class="container dark-theme">
-  <div class="lua">
-    <button aria-hidden="true"><a href=""><i class="bi bi-moon"></i></a></button>
-  </div>
- </div> -->
+            <div class="todo-list">
+                <div class="item">
+                    <input type="checkbox" />
+                    <p>Correr pelo parque 3.</p>
+                </div>
 
+                <div class="item">
+                    <input type="checkbox" />
+                    <p>10 minutos meditando</p>
+                </div>
 
- <!-- checklist -->
- <div class="container lis">
+                <div class="item">
+                    <input type="checkbox" />
+                    <p>Leia por 1 hora</p>
+                </div>
 
-  <div class="inbox">
+                <div class="item">
+                    <input type="checkbox" />
+                    <p>Pick up groceries</p>
+                </div>
 
-    <div class="item cr">
-      <input type="radio">
-      <p>Create a new todo...</p>
+                <div class="item">
+                    <input type="checkbox" />
+                    <p>Complete Todo App on frontend Mentor</p>
+                </div>
+
+                <div class="actions">
+                    <p>5 itens restantes</p>
+
+                    <div class="filters">
+                        <a href="">Todos</a>
+                        <a href="">Ativos</a>
+                        <a href="">Concluidos</a>
+                    </div>
+                    <div>
+                        <a href="">Limpar lista</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="item">
-      <input type="radio">
-      <p>Jog around the park 3.</p>
-    </div>
-
-    <div class="item">
-      <input type="radio">
-      <p>10 minutes meditation</p>
-    </div>
-
-    <div class="item">
-      <input type="radio">
-      <p>Read for 1 hour</p>
-    </div>
-
-    <div class="item">
-      <input type="radio">
-      <p>Pick up groceries</p>
-    </div>
-
-    <div class="item">
-      <input type="radio">
-      <p>Complete Todo App on frontend Mentor</p>
-    </div>
-
-
-    <p class="details">5 itens left all Active Completed Clear Completed</p>
-  </div>
-
-</div>
- 
-  
-
-
-
-
-<script src="app.js"></script>
-
+    <footer>
+        <div class="attribution ft">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+        >. Coded by <a href="#">Leonardo Azevedo</a>.
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 
-<footer>
-  <div class="container">
-    <div class="attribution ft">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Leonardo Azevedo</a>.
-    </div>
-  </div>
-</footer> 
-</div>
-</footer>
 </html>
