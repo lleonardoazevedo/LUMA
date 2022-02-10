@@ -9,6 +9,7 @@
                     --bg-light: url("./images/bg-desktop-light.jpg");
                     --icon-light: url("./images/icon-sun.svg");
                     --icon-dark: url("./images/icon-moon.svg");
+                    --icon-cross: url("./images/icon-cross.svg");
                 }
                 
                 body {
